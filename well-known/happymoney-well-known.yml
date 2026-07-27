@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of /.well-known/ and spec endpoints on Happy Money hosts
+note: >-
+  Happy Money operates a gated partner lending API (api.happymoney.com returns 403
+  to unauthenticated requests; the former developer portal portal.happymoney.com no
+  longer resolves). No public discovery documents, OpenAPI, or security.txt were
+  served. Absence of a record is valid, recorded data.
+hosts:
+- host: https://happymoney.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://api.happymoney.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /openapi.json
+    status: 403
+  - path: /swagger.json
+    status: 403
+- host: https://portal.happymoney.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    note: host does not resolve (NXDOMAIN)

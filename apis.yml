@@ -1,8 +1,15 @@
 aid: happymoney
-name: Happymoney
-description: 'Happymoney is a company surfaced as a portfolio company of anthemis and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+name: Happy Money
+description: 'Happy Money is a consumer finance company offering fully digital unsecured
+  personal loans, best known for The Payoff Loan, aimed at helping members consolidate
+  and pay off high-interest credit card debt. Loans are funded through a network of
+  community-focused credit unions, banks, and asset managers rather than by Happy Money
+  itself. The company has served over 350,000 customers and facilitated more than $7
+  billion in personal loans, and operates the industry''s first end-to-end API for
+  unsecured lending, offered to lending partners through a gated partner portal rather
+  than as a public self-serve developer product. This API Evangelist profile was seeded
+  as a portfolio-company lead (Anthemis) and enriched from Happy Money''s public web
+  presence; its lending API surface is partner-gated and not publicly documented.'
 url: https://raw.githubusercontent.com/api-evangelist/happymoney/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +17,60 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://happymoney.com/favicon.ico
 tags:
 - Company
 - Fintech
+- Lending
+- Personal Loans
+- Debt Consolidation
+- Consumer Finance
+- Credit Unions
+- Financial Services
 apis: []
+common:
+- type: Website
+  url: https://happymoney.com
+  name: Happy Money Website
+- type: Support
+  url: https://happymoney.com/support
+  name: Help Center
+- type: Blog
+  url: https://happymoney.com/press
+  name: Press & News
+- type: TermsOfService
+  url: https://happymoney.com/privacy-and-legal
+  name: Terms & Legal
+- type: PrivacyPolicy
+  url: https://happymoney.com/privacy-policy
+  name: Privacy Policy
+- type: DomainSecurity
+  url: security/happymoney-domain-security.yml
+  name: Domain Security Posture
+- type: WellKnown
+  url: well-known/happymoney-well-known.yml
+  name: Well-Known Discovery Probe
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
