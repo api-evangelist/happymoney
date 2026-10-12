@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/happymoney/integrations
+- https://zapier.com/apps/happy-money/integrations
+- https://n8n.io/integrations/happymoney/
+- https://composio.dev/toolkits/happymoney
+- https://monid.ai/tools/happymoney
+checked:
+- https://composio.dev/toolkits/happymoney
+- https://monid.ai/tools/happymoney
+- https://n8n.io/integrations/happymoney/
+- https://zapier.com/apps/happy-money/integrations
+- https://zapier.com/apps/happymoney/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
